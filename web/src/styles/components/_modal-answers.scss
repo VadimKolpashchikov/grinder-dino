@@ -1,0 +1,39 @@
+#modal-answers {
+  max-width: 745px;
+  width: 100%;
+  padding: 50px 30px;
+  background: #ffffff;
+  border-radius: 10px;
+
+  @media (max-width: 575px) {
+    padding: 30px 20px;
+  }
+
+  .modal-answers__wrap {
+    width: 100%;
+  }
+
+  .modal-answers__title {
+    padding-right: 20px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+
+    @media (max-width: 575px) {
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+
+  .modal-answers__text {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 29px;
+
+    @media (max-width: 575px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+}

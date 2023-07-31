@@ -1,0 +1,41 @@
+.modal-opt {
+  max-width: 745px !important;
+  width: 100%;
+  padding: 50px !important;
+  @media (max-width: 575px) {
+    padding: 30px 10px !important;
+  }
+  &__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    @media (max-width: 575px) {
+      max-width: 190px;
+      margin: 0 auto 30px auto;
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+  &__inputs,
+  &__textarea {
+    max-width: 358px;
+    margin: 0 auto;
+    .input {
+      margin-bottom: 20px;
+      @media (max-width: 575px) {
+        margin-bottom: 10px;
+      }
+    }
+    textarea {
+      padding: 15px 20px;
+      min-height: 186px;
+      resize: none;
+    }
+  }
+  &__btn {
+    margin: 30px auto 0 auto;
+  }
+}

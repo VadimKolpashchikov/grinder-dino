@@ -1,0 +1,13 @@
+//Шрифты
+@import "./fonts/Inter";
+@import "./fonts/Roboto";
+@import "./fonts/Gilroy";
+@import "./fonts/Rubik";
+
+// ГЛобальные на всю страницу
+@import "./normalize";
+@import "./global";
+@import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+// Элементы страницы
+@import "./components";

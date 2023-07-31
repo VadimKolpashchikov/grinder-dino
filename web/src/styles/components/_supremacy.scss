@@ -1,0 +1,69 @@
+#supremacy {
+  padding: 39px 0;
+  background: #6ace65;
+
+  @media (max-width: 767px) {
+    padding: 30px 0;
+  }
+
+  .row {
+    width: 100%;
+  }
+
+  .supremacy__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 20px;
+    row-gap: 30px;
+
+    @media (max-width: 991px) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  .supremacy__item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 450px;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      max-width: 380px;
+    }
+
+    @media (max-width: 575px) {
+      max-width: 282px;
+    }
+  }
+
+  .supremacy__item-img {
+    flex-shrink: 0;
+  }
+
+  .supremacy__item-text {
+    flex-grow: 1;
+    font-size: 20px;
+    line-height: 23px;
+    font-weight: 300;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media (max-width: 575px) {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    b {
+      font-weight: 700;
+    }
+  }
+}

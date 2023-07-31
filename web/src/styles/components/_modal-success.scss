@@ -1,0 +1,48 @@
+.modal-success {
+  padding: 50px !important;
+  width: 100%;
+  max-width: 650px;
+  @media (max-width: 575px) {
+    padding: 20px !important;
+    max-width: 280px;
+  }
+  &__heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    @media (max-width: 575px) {
+      margin-right: 50px;
+      text-align: left;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  &__desc {
+    margin: 0 auto 20px auto;
+    max-width: 350px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    @media (max-width: 575px) {
+      text-align: left;
+    }
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    max-width: 358px;
+  }
+  &__btn {
+    border: none;
+    margin-top: 30px;
+    @media (max-width: 575px) {
+      margin-top: 20px;
+    }
+  }
+}

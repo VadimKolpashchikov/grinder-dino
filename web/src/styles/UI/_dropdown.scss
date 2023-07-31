@@ -1,0 +1,89 @@
+.dropdown {
+  font-family: "Inter";
+  position: relative;
+  font-size: 18px;
+  line-height: 22px;
+  color: #252525;
+  cursor: pointer;
+  &__hero {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 10px 15px;
+    background: #ffffff;
+    user-select: none;
+    svg {
+      flex-shrink: 0;
+      transition: 200ms transform ease;
+    }
+  }
+  &__hero.entering {
+    color: rgba(50, 50, 50, 0.5);
+    background: rgba(234, 234, 234, 0.5) !important;
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__hero.entered {
+    color: rgba(50, 50, 50, 0.5);
+    background: rgba(234, 234, 234, 0.5) !important;
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+  &__hero.exiting {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+  &__hero.exited {
+    svg {
+      transform: rotate(0deg);
+    }
+  }
+  &__list {
+    position: absolute;
+    z-index: 5;
+    overflow: hidden;
+    top: calc(100% - 2px);
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transition: 200ms height ease;
+  }
+  &__item {
+    padding: 14px 15px;
+    color: #323232;
+    transition: 300ms color ease;
+    user-select: none;
+    @media (max-width: 575px) {
+      font-size: 15px;
+    }
+    @media (min-width: 768px) {
+      &:hover {
+        color: rgba(106, 206, 101, 0.6);
+      }
+    }
+  }
+  &__item.active {
+    position: relative;
+    color: #6ace65 !important;
+    pointer-events: none;
+    &:hover {
+      color: #6ace65 !important;
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 7px;
+      transform: translateY(-50%);
+      display: block;
+      height: 60%;
+      width: 3px;
+      border-radius: 3px;
+      background: #6ace65;
+    }
+  }
+}

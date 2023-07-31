@@ -1,0 +1,39 @@
+.modal-thank-success {
+  padding: 50px 50px 0 50px !important;
+  width: 100%;
+  max-width: 750px;
+  @media (max-width: 575px) {
+    padding: 50px 20px 0 20px !important;
+    max-width: 280px;
+  }
+  &__heading {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    @media (max-width: 575px) {
+      font-size: 22px;
+      line-height: 29px;
+    }
+  }
+  &__desc {
+    text-align: center;
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 300;
+    @media (max-width: 575px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
+  &__img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+}
